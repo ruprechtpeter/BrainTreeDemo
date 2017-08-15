@@ -41,6 +41,34 @@ namespace BrainTreeDemo
 			}
 		}
 		
+		public partial class Color
+		{
+			
+			// aapt resource value: 0x7f040002
+			public const int colorAccent = 2130968578;
+			
+			// aapt resource value: 0x7f040003
+			public const int colorBackground = 2130968579;
+			
+			// aapt resource value: 0x7f040004
+			public const int colorBlack = 2130968580;
+			
+			// aapt resource value: 0x7f040000
+			public const int colorPrimary = 2130968576;
+			
+			// aapt resource value: 0x7f040001
+			public const int colorPrimaryDark = 2130968577;
+			
+			static Color()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Color()
+			{
+			}
+		}
+		
 		public partial class Drawable
 		{
 			
@@ -76,26 +104,26 @@ namespace BrainTreeDemo
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f040000
-			public const int ApplicationName = 2130968576;
+			// aapt resource value: 0x7f050000
+			public const int ApplicationName = 2131034112;
 			
-			// aapt resource value: 0x7f040002
-			public const int BraintreeFragment_initialized = 2130968578;
+			// aapt resource value: 0x7f050002
+			public const int BraintreeFragment_initialized = 2131034114;
 			
-			// aapt resource value: 0x7f040005
-			public const int buy_brand_new_laptop = 2130968581;
+			// aapt resource value: 0x7f050005
+			public const int buy_brand_new_laptop = 2131034117;
 			
-			// aapt resource value: 0x7f040006
-			public const int buy_now = 2130968582;
+			// aapt resource value: 0x7f050006
+			public const int buy_now = 2131034118;
 			
-			// aapt resource value: 0x7f040001
-			public const int failed_token = 2130968577;
+			// aapt resource value: 0x7f050001
+			public const int failed_token = 2131034113;
 			
-			// aapt resource value: 0x7f040003
-			public const int issues_with_authorization = 2130968579;
+			// aapt resource value: 0x7f050003
+			public const int issues_with_authorization = 2131034115;
 			
-			// aapt resource value: 0x7f040004
-			public const int token_failed = 2130968580;
+			// aapt resource value: 0x7f050004
+			public const int token_failed = 2131034116;
 			
 			static String()
 			{
