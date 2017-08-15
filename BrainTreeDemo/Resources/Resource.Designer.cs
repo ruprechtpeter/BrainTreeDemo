@@ -76,11 +76,26 @@ namespace BrainTreeDemo
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f040001
-			public const int ApplicationName = 2130968577;
-			
 			// aapt resource value: 0x7f040000
-			public const int Hello = 2130968576;
+			public const int ApplicationName = 2130968576;
+			
+			// aapt resource value: 0x7f040002
+			public const int BraintreeFragment_initialized = 2130968578;
+			
+			// aapt resource value: 0x7f040005
+			public const int buy_brand_new_laptop = 2130968581;
+			
+			// aapt resource value: 0x7f040006
+			public const int buy_now = 2130968582;
+			
+			// aapt resource value: 0x7f040001
+			public const int failed_token = 2130968577;
+			
+			// aapt resource value: 0x7f040003
+			public const int issues_with_authorization = 2130968579;
+			
+			// aapt resource value: 0x7f040004
+			public const int token_failed = 2130968580;
 			
 			static String()
 			{
