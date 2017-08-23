@@ -5,6 +5,9 @@ using System;
 using Android.Util;
 using System.Net.Http;
 using System.Threading.Tasks;
+using Android.Content;
+using Braintree;
+using Com.Braintreepayments.Api.Models;
 
 namespace BrainTreeDemo
 {
@@ -42,14 +45,19 @@ namespace BrainTreeDemo
 
         public void onBraintreeSubmit()
         {
+            Intent intent = new Intent(this, typeof(PaymentActivity));
+            intent.PutExtra("CLIENTTOKEN", clientToken);
+            //intent.PutExtra(BundleCodeConsts.BUNDLE_IMAGE, CapturedImage._file.AbsolutePath.ToString());
+            this.StartActivityForResult(intent, 10);
+
             //var request = new BTDropInRequest();
             //var dropIn = new BTDropInController(clientTokenOrTokenizationKey, request, HandleBTDropInControllerHandler);
             //PresentViewController(dropIn, false, null);
 
+
             //DropInRequest dropInRequest = new DropInRequest().clientToken(clientToken);
             //startActivityForResult(dropInRequest.getIntent(this), BRAINTREE_REQUEST_CODE);
         }
-
 
         static async void GetClientToken()
         {

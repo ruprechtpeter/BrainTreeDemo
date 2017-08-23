@@ -2750,8 +2750,8 @@ namespace BrainTreeDemo
 			// aapt resource value: 0x7f0b0023
 			public const int logo_only = 2131427363;
 			
-			// aapt resource value: 0x7f0b00bf
-			public const int masked = 2131427519;
+			// aapt resource value: 0x7f0b00c0
+			public const int masked = 2131427520;
 			
 			// aapt resource value: 0x7f0b001b
 			public const int match_parent = 2131427355;
@@ -3008,8 +3008,8 @@ namespace BrainTreeDemo
 			// aapt resource value: 0x7f0b000e
 			public const int view_offset_helper = 2131427342;
 			
-			// aapt resource value: 0x7f0b00be
-			public const int visible = 2131427518;
+			// aapt resource value: 0x7f0b00bf
+			public const int visible = 2131427519;
 			
 			// aapt resource value: 0x7f0b0036
 			public const int wide = 2131427382;
@@ -3019,6 +3019,9 @@ namespace BrainTreeDemo
 			
 			// aapt resource value: 0x7f0b001c
 			public const int wrap_content = 2131427356;
+			
+			// aapt resource value: 0x7f0b00be
+			public const int wv_webview = 2131427518;
 			
 			static Id()
 			{
@@ -3248,16 +3251,19 @@ namespace BrainTreeDemo
 			public const int notification_template_part_time = 2130903096;
 			
 			// aapt resource value: 0x7f030039
-			public const int select_dialog_item_material = 2130903097;
+			public const int PaymentView = 2130903097;
 			
 			// aapt resource value: 0x7f03003a
-			public const int select_dialog_multichoice_material = 2130903098;
+			public const int select_dialog_item_material = 2130903098;
 			
 			// aapt resource value: 0x7f03003b
-			public const int select_dialog_singlechoice_material = 2130903099;
+			public const int select_dialog_multichoice_material = 2130903099;
 			
 			// aapt resource value: 0x7f03003c
-			public const int support_simple_spinner_dropdown_item = 2130903100;
+			public const int select_dialog_singlechoice_material = 2130903100;
+			
+			// aapt resource value: 0x7f03003d
+			public const int support_simple_spinner_dropdown_item = 2130903101;
 			
 			static Layout()
 			{
@@ -4628,6 +4634,12 @@ namespace BrainTreeDemo
 			
 			// aapt resource value: 0x7f08017d
 			public const int Widget_Design_TextInputLayout = 2131231101;
+			
+			// aapt resource value: 0x7f08017e
+			public const int bt_no_activity_animation = 2131231102;
+			
+			// aapt resource value: 0x7f08017f
+			public const int bt_transparent_activity = 2131231103;
 			
 			static Style()
 			{
