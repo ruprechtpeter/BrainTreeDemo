@@ -1,6 +1,7 @@
 <head>
   <meta charset="utf-8">
   <script src="https://js.braintreegateway.com/web/dropin/1.6.1/js/dropin.min.js"></script>
+  
 </head>
 <body>
   <div id="dropin-container"></div>
@@ -10,7 +11,12 @@
 
     braintree.dropin.create({
       authorization: 'CLIENT_TOKEN_FROM_SERVER',
-      container: '#dropin-container'
+      container: '#dropin-container',
+	  paypal: {
+		flow: 'checkout',
+		amount: '10000',
+		currency: 'HUF'
+	  }
     }, function (createErr, instance) {
       button.addEventListener('click', function () {
         instance.requestPaymentMethod(function (err, payload) {
@@ -19,4 +25,5 @@
       });
     });
   </script>
+  
 </body>

@@ -22,28 +22,6 @@ namespace BrainTreeDemo
         private WebView wv_webview;
         private string clientToken = "";
         private string html = "";
-        //private String html = @"
-        //    <head>
-        //        <meta charset=""utf-8"">
-        //        <script src=""https://js.braintreegateway.com/web/dropin/1.6.1/js/dropin.min.js"" ></script>
-        //    </head>
-        //    <body>
-        //        <div id=""dropin-container""></div>
-        //        <button id=""submit-button"">Request payment method</button>
-        //        <script>
-        //            var button = document.querySelector('#submit-button');
-        //            braintree.dropin.create({
-        //                authorization: 'CLIENT_TOKEN_FROM_SERVER',
-        //                container: '#dropin-container'
-        //            }, function(createErr, instance) {
-        //                    button.addEventListener('click', function() {
-        //                    instance.requestPaymentMethod(function(err, payload) {
-        //                    // Submit payload.nonce to your server
-        //                    });
-        //                });
-        //            });
-        //        </script>
-        //    </body>";
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -64,8 +42,7 @@ namespace BrainTreeDemo
             LoadAssetHtml();
 
             string replacedHtml = ReplaceStringInHtml();
-            Log.Debug("PAYMENT", replacedHtml);
-            wv_webview.LoadDataWithBaseURL("", replacedHtml, "text/html", "utf-8", "");
+                wv_webview.LoadDataWithBaseURL("", replacedHtml, "text/html", "utf-8", "");
         }
 
         private void LoadAssetHtml()
@@ -80,6 +57,11 @@ namespace BrainTreeDemo
         private void Init()
         {
             clientToken = Intent.GetStringExtra("CLIENTTOKEN") ?? "";
+            if (clientToken == "") {
+                Log.Debug("PaymentActivity", "NO CLIENT TOKEN!!!");
+            }
+            
+
             wv_webview = FindViewById<WebView>(Resource.Id.wv_webview);
             wv_webview.Settings.JavaScriptEnabled = true;
             //wv_webview.AddJavascriptInterface(new JSRestartInterface(this), "JSRestart");
